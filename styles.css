@@ -1,0 +1,150 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: "Mohave", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 33px 0px 0px 60px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+a{
+    color: #989D9C;
+    font-size: 22px;
+    font-style:normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+header button{
+    width: 130px;
+    height: 41px;
+    flex-shrink: 0;
+    border-radius: 20.5px;
+    background-color: #665AE1;
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-color: #665AE1;
+    border-style: #665AE1;
+    cursor: pointer;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.esquerda{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.mulher-cachorro{
+    width: 62%;
+}
+
+.direita{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.enunciado{
+    width: 70%;
+}
+
+.direita h1{
+    color: #515151;
+    font-size: 87px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.direita h2{
+    color: #515151;
+    font-size: 51px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 25px;
+}
+
+.direita p{
+    color: #848484;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.direita button{
+    width: 159px;
+    height: 41px;
+    border-radius: 20.5px;
+    background: #ADFF00;
+    border-style: #ADFF00;
+    border-color: #ADFF00;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px){
+
+    header{
+        padding: 33px 0px 0px 0px;
+        justify-content: center;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    .direita{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .direita p{
+        display: none;
+    }
+
+    .esquerda{
+        width: 100%;
+        margin-top: 17%;
+        justify-content: center;
+        align-items: center;
+    }
+}
